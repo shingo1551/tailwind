@@ -1,0 +1,7 @@
+.hello {
+  @apply text-gray-600;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
