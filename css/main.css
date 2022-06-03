@@ -1,0 +1,9 @@
+.list {
+  border-style: solid;
+  border-top-width: 2px;
+}
+
+.list div {
+  border-style: solid;
+  border-bottom-width: 2px;
+}

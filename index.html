@@ -2,15 +2,71 @@
 <html>
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="/css/tailwind.css" rel="stylesheet">
-    <script src="lesson.js" defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="/css/tailwind.css" rel="stylesheet">
+  <link href="/css/main.css" rel="stylesheet">
+  <script src="lesson.js" defer></script>
+
+  <!-- order -->
+  <script src="order.js" defer></script>
+  <script>
+    const orders = [{
+        name: 'menu1',
+        count: 3,
+        price: 1500
+      },
+      {
+        name: 'menu2',
+        count: 2,
+        price: 2000
+      },
+      {
+        name: 'menu3',
+        count: 1,
+        price: 2500
+      },
+    ];
+  </script>
+  <style>
+    button {
+      color: white;
+      background-color: skyblue;
+      padding: 0.5rem;
+    }
+
+    input {
+      width: 3rem;
+    }
+  </style>
 </head>
 
 <body>
-    <h1 class="hello">Hello World!!</h1>
-    <div id="menu">MENU</div>
+  <h1 class="hello">Hello World!!</h1>
+  <div id="menu">MENU</div>
+
+  <div class="list">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+  </div>
+
+  <span id="abc"></span>
+
+  <!-- order -->
+  <template id="order">
+    <div>
+      <button class="minus">-</button>
+      <input class="qty" type="text" readonly />
+      <button class="plus">+</button>
+      <span class="price"></span>
+      <span class="sub-total"></span>
+    </div>
+  </template>
+
+  <div id="container"></div>
+  <p id="total"></p>
 </body>
 
 </html>
